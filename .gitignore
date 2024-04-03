@@ -1,0 +1,12 @@
+# Ignore Python byte-compiled files
+*.pyc
+
+# Ignore database configuration files
+*.sqlite3
+*.db
+
+# Ignore environment configuration files
+.env
+
+# Ignore media files
+/media/
