@@ -7,17 +7,20 @@ class BlogSerializer(serializers.ModelSerializer):
         fields = '__all__'  
 
 class Getblogserializer(serializers.ModelSerializer): 
-     model = Blog
-     fields = '__all__'  
-     depth=2
+    class Meta: 
+        model = Blog
+        fields = '__all__'  
+        depth=2
 
 class Commentserializer(serializers.ModelSerializer):
-    model=Comment
-    fields = '__all__'  
-    depth=2
+    class Meta: 
+        model=Comment
+        fields = '__all__'  
+
 
 
 class Replieserializer(serializers.ModelSerializer):
-    model=Replies
-    fields='__all__'
-    depth=2
+    class Meta: 
+        model=Replies
+        fields='__all__'
+        depth=2

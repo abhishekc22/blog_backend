@@ -39,6 +39,8 @@ class Comment(models.Model):
     author = models.ForeignKey(User, on_delete=models.CASCADE)
     content = models.TextField()
 
+    
+
 class Replies(models.Model):
         content = models.TextField()
         comments = models.ManyToManyField(Comment)
